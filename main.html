@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/sidebar-collapse.css">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+	<aside class="sidebar-left-collapse">
+
+
+
+		<div class="sidebar-links">
+
+			<img width="100%" height="auto" src="assets/images/loginlogo.png"/>
+
+
+			<div class="link-blue">
+
+				<a href="#">
+					<i class="fa fa-picture-o"></i>About Us
+				</a>
+
+				<ul class="sub-links">
+					<li id="1"><a href="#">Foundations</a></li>
+					<li id="2"><a href="#">Locations</a></li>
+				</ul>
+
+			</div>
+			<div class="link-red">
+
+				<a href="#">
+					<i class="fa fa-heart-o"></i>Recognition
+				</a>
+
+				<ul class="sub-links">
+					<li id="3"><a href="#">Industry Recognition</a></li>
+					<li id="4"><a href="#">National Recognition</a></li>
+				</ul>
+
+			</div>
+			<div class="link-blue">
+
+				<a href="#">
+					<i class="fa fa-picture-o"></i>Equipment
+				</a>
+
+				<ul class="sub-links">
+					<li id="5"><a href="#">Technology</a></li>
+				</ul>
+
+			</div>
+			<div class="link-red">
+
+				<a href="#">
+					<i class="fa fa-heart-o"></i>Products
+				</a>
+
+				<ul class="sub-links">
+					<li id="6"><a href="#">Windows</a></li>
+					<li id="7"><a href="#">Garden Windows</a></li>
+					<li id="8"><a href="#">Patio Doors</a></li>
+					<li id="9"><a href="#">Bay &amp; Bow Windows</a></li>
+				</ul>
+
+			</div>
+			<div class="link-blue">
+
+				<a href="#">
+					<i class="fa fa-picture-o"></i>Support
+				</a>
+
+				<ul class="sub-links">
+					<li id="10"><a href="#">Sunroom Support</a></li>
+					<li id="11"><a href="#">Entry Door Support</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</aside>
+
+	<div style="margin-left:200px" class="">
+
+
+
+			<img id="mainImage" width="100%" style="margin-top:5%" src=""/>
+
+
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var selection ="";
+		$(function () {
+
+			var links = $('.sidebar-links > div');
+
+			links.on('click', function () {
+
+				links.removeClass('selected');
+				$(this).addClass('selected');
+			});
+		});
+
+		$("#1").click(function() {
+			$('#mainImage').attr('src','assets/images/p1.JPG')
+		});
+		$("#2").click(function() {
+			$('#mainImage').attr('src','assets/images/p2.JPG')
+		});
+		$("#3").click(function() {
+			$('#mainImage').attr('src','assets/images/p3.JPG')
+		});
+		$("#4").click(function() {
+			$('#mainImage').attr('src','assets/images/p4.JPG')
+		});
+		$("#5").click(function() {
+			$('#mainImage').attr('src','assets/images/p5.JPG')
+		});
+		$("#6").click(function() {
+			$('#mainImage').attr('src','assets/images/p6.JPG')
+		});
+		$("#7").click(function() {
+			$('#mainImage').attr('src','assets/images/p7.JPG')
+		});
+		$("#8").click(function() {
+			$('#mainImage').attr('src','assets/images/p8.JPG')
+		});
+		$("#9").click(function() {
+			$('#mainImage').attr('src','assets/images/p9.JPG')
+		});
+		$("#10").click(function() {
+			$('#mainImage').attr('src','assets/images/p10.JPG')
+		});
+		$("#11").click(function() {
+			$('#mainImage').attr('src','assets/images/p11.JPG')
+		});
+
+	</script>
+
+</body>
+
+</html>
