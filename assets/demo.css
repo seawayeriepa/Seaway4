@@ -1,7 +1,14 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 html{
-	background-color: #fff;
+	background: #497EBA; /* fallback for old browsers */
+	background: -webkit-linear-gradient(right, #497EBA, #405A85);
+	background: -moz-linear-gradient(right, #497EBA, #405A85);
+	background: -o-linear-gradient(right, #497EBA, #405A85);
+	background: linear-gradient(to left, #497EBA, #405A85);
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body{
@@ -9,6 +16,9 @@ body{
 	padding:0;
 	margin:0;
 }
+
+
+
 
 .menu{
 	text-align: center;
