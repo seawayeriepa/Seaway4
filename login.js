@@ -1,4 +1,14 @@
-function validate()
+function checkDate() {
+  var todaysDate = new Date();
+  var convertedDate = todaysDate.getDay();
+
+  if(convertedDate == 0 || convertedDate == 1 || convertedDate == 2 || convertedDate == 3 || convertedDate == 5 || convertedDate == 6)
+  {
+    location.href="index.html";
+  }
+}
+
+function validateUser()
 {
     if(   (document.getElementById("text1").value == "admin" && document.getElementById("text2").value == "admin123") ||
           (document.getElementById("text1").value == "user" && document.getElementById("text2").value == "user123") ||
